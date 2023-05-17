@@ -1,0 +1,145 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ),
+        /* bottom, image */
+        url(backgrounds/4.jpg);
+    background-size: cover;
+
+}
+.subtitle {
+    float: left;
+    padding: 0 0 0 1.25rem;
+}
+
+.language {
+    float: right;
+    padding: 0 3.7rem 0 0;
+}
+
+h1 {
+    font-family: "Neue Montreal",sans-serif;
+    color: #f5eee6;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    font-size: 2rem;
+}
+
+.h7 {
+    font-family: "Neue Montreal",sans-serif;
+    color: #f5eee6;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+a {
+    font-family: "Neue Montreal",sans-serif;
+    color: #f5eee6;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+footer [class*=language] nav[class*=subtitle] {
+    padding: 1.25rem 0 1.25rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 1px;
+    border: none;
+}
+
+footer [class*=language] {
+    font-family: "Migra";
+    color: #f5eee6;
+    text-transform: uppercase;
+    font-family: "Migra",sans-serif;
+    text-transform: none;
+}
+
+
+
+
+header {
+    padding: 0 1.25rem 0 1.25rem ;
+}
+
+header [class*=wrap-header] nav[class*=main-navigation] {
+    padding: 1.25rem 0 1.25rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(245,238,230,.5);
+    position: relative;
+    
+    
+}
+
+header [class*=wrap-header] nav[class*=main-navigation] progress {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: transparent;
+}
+
+progress {
+    appearance: auto;
+    box-sizing: border-box;
+    display: inline-block;
+    block-size: 1em;
+    inline-size: 10em;
+    vertical-align: -0.2em;
+    writing-mode: horizontal-tb !important;
+}
+
+header [class*=wrap-header] nav[class*=main-navigation] [class*=title] a span {
+    font-family: "Migra";
+    color: #f5eee6;
+    text-transform: uppercase;
+    font-family: "Migra",sans-serif;
+    text-transform: none;
+    margin-right: 1.625rem;
+}
+
+@font-face {
+    font-family: "Migra";
+    src: url(5f6a68c6046cfa976287.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(2da02150d666b9d1e31d.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF
+}
